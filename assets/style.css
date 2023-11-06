@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    background-color: darkslategray;
+    font-size: 30px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 1%;
+}
