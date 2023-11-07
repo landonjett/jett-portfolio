@@ -30,7 +30,7 @@ nav ul li::before {
     content: "";
     position: absolute;
     width: 110%; /* Adjusted this value to make the underline longer */
-    height: 5px; /* Adjusted the thickness of the underline */
+    height: 4px; /* Adjusted the thickness of the underline */
     background-color:beige; /* Adjusted the color of the underline */
     bottom: -3px; /* Adjusted the distance between the text and the underline */
     left: -5%; /* Adjusted the position of the underline to make it longer on the left */
@@ -53,12 +53,28 @@ nav {
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 section {
-    background-color:beige; 
     padding: 90px; /* Added padding to create some space around the content */
     position: relative;
+    background-image: url(/Users/landonjett/bootcamp/homework/even/jett-portfolio/assets/images/rocky-landscape.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+section::before {
+    content: "";
+    background: rgba(245, 245, 220, 0.6); /* Beige color with some transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
 }
 
 h2 {
@@ -69,4 +85,138 @@ h2 {
     color: darkslategrey;
     padding: 10px;
     border: 2px solid darkslategray;
+    z-index: 2;
+}
+
+.about-me {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color: darkslategray;
+}
+
+h3 {
+    font-size: 50px; /* Increased the font size to make the heading bigger */
+    margin: 0; /* Removed margin to avoid extra spacing */
+    border-right: 3px solid darkslategray; /* Add a right border to create the vertical line */
+    padding-right: 1px; /* Add some spacing to separate the text from the line */
+    
+    
+}
+
+p {
+    flex: 3; /* Set the width of the paragraph to take up the available space */
+    font-size: 20px;
+    text-align: center;
+    color: darkslategray;
+}
+
+main {
+    display: flex; /* Display the sections in a flex container */
+    align-items: center; /* Center the content vertically */
+}
+
+
+h4 {
+    font-size: 50px; /* Set the font size to match the size of h3 */
+    margin: 0; /* Remove any margin to avoid extra spacing */
+    border-right: 3px solid darkslategray; /* Add a right border to create the vertical line */
+    padding-right: 5px; /* Add some spacing to separate the text from the line */
+    margin-left: 93px;
+}
+
+.work {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    height: 800px;
+    color: darkslategray;
+    
+}
+
+h5 {
+    font-size: 42.85px; /* Increased the font size to make the heading bigger */
+    margin: 0; /* Removed margin to avoid extra spacing */
+    border-right: 3px solid darkslategray; /* Add a right border to create the vertical line */
+    padding-right: 1px; /* Add some spacing to separate the text from the line */
+    color: darkslategray;
+    
+}
+
+.contact-me {
+    padding: 40px;
+    display: flex;
+    flex-wrap: flex;
+    align-items: center;
+    height: 50px;
+    color: darkslategray;
+}
+
+main ul {
+    display: flex;
+    min-width: 600px;
+    margin-bottom: 1%;
+    padding-right: 100px;
+    list-style: none;
+    justify-content: space-between;
+    color: darkslategray;
+
+}
+
+main ul li {
+    position: relative;
+    font-size: 24px;
+    
+    
+
+}
+
+main ul li::before {
+
+    content: "";
+    position: absolute;
+    width: 105%; /* Adjusted this value to make the underline longer */
+    height: 4px; /* Adjusted the thickness of the underline */
+    background-color: darkslategray;
+    bottom: -3px; /* Adjusted the distance between the text and the underline */
+    
+}
+
+/* Add padding to the .box element */
+.samples .box {
+    padding: 50px; /* Adjust the padding size as needed */
+    border: 8px solid darkslategray; /* Add a border around the .box element */
+    border-radius: 10px; /* Rounded corners for the box */
+    background-color: beige; /* Background color inside the box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the content within the .box */
+.samples .box main {
+    text-align: center; /* Center the content horizontally */
+    flex: 1; /* Allow the 'main' section to expand and take remaining vertical space */
+    
+}
+
+/* Style the headings within the .box */
+.samples .box h6 {
+    color: beige;
+}
+
+main div p {
+    color:beige;
+    background-color: darkslategray;
+    z-index: 1;
+}
+
+h6 {
+    background-color: darkslategray;
+    z-index: 1;
+    font-size: 40px;
+    
+
 }
