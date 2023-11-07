@@ -1,8 +1,72 @@
+
+
 header {
     display: flex;
-    background-color: darkslategray;
-    font-size: 30px;
+    background-color:darkslategray;
+    font-size: 20px;
     justify-content: space-between;
-    font-family: sans-serif;
-    padding: 1%;
+    color: darkslategray;
+    padding: -20px 0px;
+    
+    
+}
+nav ul {
+    display: flex;
+    min-width: 600px;
+    margin-bottom: 1%;
+    padding-right: 100px;
+    list-style: none;
+    justify-content: space-between;
+    color:beige;
+}
+
+
+nav ul li {
+    position: relative;
+    font-size: 24px;
+}
+
+nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 110%; /* Adjusted this value to make the underline longer */
+    height: 5px; /* Adjusted the thickness of the underline */
+    background-color:beige; /* Adjusted the color of the underline */
+    bottom: -3px; /* Adjusted the distance between the text and the underline */
+    left: -5%; /* Adjusted the position of the underline to make it longer on the left */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centered the navigation vertically within the header */
+    margin-top: 20px; /* Added margin to move it down */
+}
+
+.page-title {
+    margin-left: 70px;
+    background-color: beige;
+    padding: 5px;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color:beige; 
+    padding: 90px; /* Added padding to create some space around the content */
+    position: relative;
+}
+
+h2 {
+    position: absolute; /* Position the text absolutely */
+    bottom: 0; /* Move it to the bottom */
+    right: 180px; /* Move it to the right */
+    font-size: 45px;
+    color: darkslategrey;
+    padding: 10px;
+    border: 2px solid darkslategray;
 }
