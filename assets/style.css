@@ -80,7 +80,7 @@ section::before {
 h2 {
     position: absolute; /* Position the text absolutely */
     bottom: 0; /* Move it to the bottom */
-    right: 180px; /* Move it to the right */
+    right: 120px; /* Move it to the right */
     font-size: 45px;
     color: darkslategrey;
     padding: 10px;
@@ -103,6 +103,7 @@ h3 {
     padding-right: 1px; /* Add some spacing to separate the text from the line */
     
     
+    
 }
 
 p {
@@ -115,6 +116,7 @@ p {
 main {
     display: flex; /* Display the sections in a flex container */
     align-items: center; /* Center the content vertically */
+    align-items: stretch;
 }
 
 
@@ -184,27 +186,37 @@ main ul li::before {
 }
 
 /* Add padding to the .box element */
-.samples .box {
+.samples .large-box {
     padding: 50px; /* Adjust the padding size as needed */
-    border: 8px solid darkslategray; /* Add a border around the .box element */
-    border-radius: 10px; /* Rounded corners for the box */
+    border: 3px solid darkslategray; /* Add a border around the .box element */
+     /* Rounded corners for the box */
     background-color: beige; /* Background color inside the box */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-end;
     text-align: center;
+    background-image: url(./images/Desert-landscape.avif);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    
 }
 
 /* Style the content within the .box */
-.samples .box main {
+.samples .large-box main {
     text-align: center; /* Center the content horizontally */
     flex: 1; /* Allow the 'main' section to expand and take remaining vertical space */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center;
     
 }
 
 /* Style the headings within the .box */
-.samples .box h6 {
+.samples .large-box h6 {
     color: beige;
+    margin: 0; /* Remove default margins */
 }
 
 main div p {
@@ -220,3 +232,53 @@ h6 {
     
 
 }
+
+.samples .large-box p {
+    color: beige;
+    margin: 0; /* Remove default margins */
+}
+
+section .large-box {
+    margin: 100px;
+    
+}
+
+.samples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto auto; 
+    gap: 20px; 
+    flex: 1;
+    padding: 20px; 
+}
+
+.large-box {
+    grid-column: span 4; /* This spans the large box across all four columns */
+    /* Add styling for the large box here */
+}
+
+.samples .small-box {
+    border: 2px solid darkslategray; /* Add a border around the small boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the left */
+    justify-content: flex-end; /* Align children to the bottom */
+    padding: 10px; /* Add some padding for spacing */
+    height: 200px;
+    width: 200px;
+}
+
+.samples .small-box h6 {
+    color: var(--beige);
+    margin: 0;
+}
+
+.samples .small-box p {
+    color: var(--beige);
+    margin: 0;
+    margin-top: auto; /* Push the <p> to the bottom */
+}
+
+.line {
+    border-bottom: 1px solid #888;
+  }
