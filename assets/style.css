@@ -69,7 +69,7 @@ body {
 nav {
     padding: 90px; 
     position: relative;
-    background-image: url(/Users/landonjett/bootcamp/homework/even/jett-portfolio/assets/images/rocky-landscape.jpeg);
+    background-image: url(./images/rocky-landscape.jpeg);
     background-size: cover;
     background-position: center;
     
