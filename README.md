@@ -21,6 +21,7 @@ Here is a screenshot of the webpage:
 
 ![Jett Portfolio](./assets/images/_Users_landonjett_bootcamp_homework_even_jett-portfolio_index.html.png)
 
+here is a link that will take you to the webpage - https://landonjett.github.io/jett-portfolio/#work
 
 ## Credits 
 
