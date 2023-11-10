@@ -1,14 +1,14 @@
+/* Header Styles */
 header {
     display: flex;
-    background-color:darkslategray;
+    background-color: darkslategray;
     font-size: 20px;
     justify-content: space-between;
     color: darkslategray;
-    padding: -20px 0px;
-    
-    
+    padding: -20px 0px;  /* Potential issue: Negative padding doesn't make sense */
 }
 
+/* Navigation Styles */
 header div ul {
     display: flex;
     min-width: 600px;
@@ -16,7 +16,7 @@ header div ul {
     padding-right: 100px;
     list-style: none;
     justify-content: space-between;
-    color:beige;
+    color: beige;
 }
 
 header div ul li {
@@ -27,11 +27,11 @@ header div ul li {
 header div ul li::before {
     content: "";
     position: absolute;
-    width: 110%; 
-    height: 4px; 
-    background-color:beige; 
-    bottom: -3px; 
-    left: -5%; 
+    width: 110%;
+    height: 4px;
+    background-color: beige;
+    bottom: -3px;
+    left: -5%;
 }
 
 header div ul li a {
@@ -40,57 +40,54 @@ header div ul li a {
 
 header a {
     text-decoration: none;
-    
 }
-
 
 header div {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    margin-top: 20px; 
+    align-items: center;
+    margin-top: 20px;
 }
 
+/* Page Title Styles */
 .page-title {
     background-color: beige;
     padding: 8px;
     display: inline-block;
     padding-left: 100px;
-    
-    
 }
 
+/* Body Styles */
 body {
     margin: 0;
     padding: 0;
-    
 }
 
+/* Navigation Styles */
 nav {
-    padding: 90px; 
+    padding: 90px;
     position: relative;
     background-image: url(./images/rocky-landscape.jpeg);
     background-size: cover;
     background-position: center;
-    
 }
 
 nav::before {
     content: "";
-    background: rgba(245, 245, 220, 0.3); 
+    background: rgba(245, 245, 220, 0.3);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-
 }
 
+/* Heading Styles */
 h2 {
-    position: absolute; 
-    top: 0; 
-    right: 50px; 
+    position: absolute;
+    top: 0;
+    right: 50px;
     font-size: 45px;
     color: darkslategrey;
     padding: 8px;
@@ -98,12 +95,13 @@ h2 {
     z-index: 2;
 }
 
-
+/* Card Styles */
 .card {
     display: flex;
     margin-bottom: 100px;
 }
 
+/* Heading Styles */
 h3 {
     flex: 0 0 20%;
     padding: 20px;
@@ -113,23 +111,25 @@ h3 {
     text-align: end;
 }
 
+/* Content Styles */
 .content {
     flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
 }
 
+/* Section Paragraph Styles */
 section p {
-    
     font-size: 20px;
     text-align: center;
     color: darkslategray;
     margin: 10px;
 }
 
+/* Article List Styles */
 article ul {
     display: flex;
     margin-bottom: 1%;
@@ -137,7 +137,6 @@ article ul {
     justify-content: space-evenly;
     color: darkslategray;
     text-align: center;
-    
 }
 
 article ul li {
@@ -146,19 +145,18 @@ article ul li {
 }
 
 article ul li::before {
-
     content: "";
     position: absolute;
-    width: 105%; 
-    height: 4px; 
+    width: 105%;
+    height: 4px;
     background-color: darkslategray;
-    bottom: -3px; 
-    
+    bottom: -3px;
 }
 
+/* Large Box Styles */
 .large-box {
-    padding: 200px; 
-    border: 3px solid darkslategray; 
+    padding: 200px;
+    border: 3px solid darkslategray;
     background-color: beige;
     display: flex;
     flex-direction: column;
@@ -178,12 +176,12 @@ article ul li::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(245, 245, 220, 0.3); 
-    z-index: 1; 
-    transition: opacity 0.3s ease; 
+    background: rgba(245, 245, 220, 0.3);
+    z-index: 1;
+    transition: opacity 0.3s ease;
 }
 
-
+/* Article Heading Styles */
 article h4 {
     background-color: darkslategray;
     padding: 8px;
@@ -191,6 +189,7 @@ article h4 {
     padding-left: 100px;
 }
 
+/* Article Paragraph Styles */
 article p {
     background-color: darkslategray;
     padding: 8px;
@@ -198,6 +197,7 @@ article p {
     padding-left: 100px;
 }
 
+/* Small Box Styles */
 .small-box {
     border: 3px solid darkslategray;
     background-color: beige;
@@ -208,7 +208,7 @@ article p {
     z-index: 1;
     color: beige;
     margin: 10px;
-    position: relative; 
+    position: relative;
     background-size: cover;
     padding: 50px;
     flex: 0 0 50%;
@@ -221,25 +221,28 @@ article p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(245, 245, 220, 0.3); 
-    z-index: -1; 
-    transition: opacity 0.3s ease; 
+    background: rgba(245, 245, 220, 0.3);
+    z-index: -1;
+    transition: opacity 0.3s ease;
 }
 
+/* Hover Effect Styles */
 .large-box:hover::before,
 .small-box:hover::before {
-    opacity: 0; 
+    opacity: 0;
 }
 
+/* Samples Styles */
 .samples .small-box main article {
     text-align: center;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2; 
+    z-index: 2;
 }
 
+/* Small Box Image Styles */
 .small-box:nth-child(2) {
     background-image: url(./images/desert-2.webp);
 }
@@ -256,19 +259,16 @@ article p {
     background-image: url(./images/desert-5.webp);
 }
 
-
-
-
+/* Box Content Styles */
 .box-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
     padding: 0;
-    
 }
 
-
+/* Large Box Main Styles */
 .large-box main {
     text-align: left;
     flex: 1;
@@ -278,59 +278,86 @@ article p {
     align-items: flex-start;
     z-index: 2;
     margin: 0;
-    padding: 300px 20px 5px 0; 
+    padding: 300px 20px 5px 0;
     height: 100%;
     box-sizing: border-box;
 }
 
+/* Large Box Styles */
 div.large-box {
-
     padding-left: 0%;
     padding-bottom: 0;
     padding-top: 100px;
 }
 
+/* Small Box Styles */
 div.small-box {
-
     padding-left: 0%;
     padding-bottom: 5px;
     padding-top: 80px;
 }
+
+/* Heading 4 Styles */
 h4 {
     padding: 0;
     margin: 0;
 }
 
+/* Box Content Paragraph Styles */
 .box-content p {
-
     margin: 0;
     font-size: 12px;
 }
 
-
-
+/* Media Query Styles */
 @media only screen and (max-width: 768px) {
     header div ul {
-        padding-right: 20px; 
+        padding-right: 20px;
     }
 
     .page-title {
-        padding-left: 20px; 
+        padding-left: 20px;
     }
 
     nav {
-        padding: 50px; 
+        padding: 50px;
     }
 
     .large-box main {
-        padding: 200px 20px 5px 0; 
+        padding: 200px 20px 5px 0;
     }
 
     div.large-box {
-        padding-top: 50px; 
+        padding-top: 50px;
     }
 
     div.small-box {
-        padding-top: 50px; 
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    /* Apply responsive styles when the screen width is 900px or less */
+    ul {
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center-align list items */
+    }
+
+    ul li {
+        margin: 10px 0; /* Add spacing between list items */
+        text-align: center; /* Center-align text within list items */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 50px; /* Reduced the padding to make space for smaller screens */
+    }
+
+    h2 {
+        top: 20px; /* Move the text down to fit within the smaller nav */
+        right: 20px; /* Adjust the right spacing */
+        font-size: 24px; /* Reduce the font size for smaller screens */
+        border: 1px solid darkslategray; /* Adjust the border size */
     }
 }
